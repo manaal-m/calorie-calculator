@@ -1,0 +1,47 @@
+/* Global Body Styles */
+body { 
+    font-family: 'Outfit', sans-serif; 
+    background-color: #F5F5F4; /* Stone-100: Warm Grey background */
+}
+
+/* Custom Input Fields */
+.input-field {
+    width: 100%;
+    padding: 1rem;
+    background-color: #FAFAF9; /* Stone-50 */
+    border: 1px solid #E7E5E4; /* Stone-200 */
+    border-radius: 1rem; /* Highly rounded inputs */
+    outline: none;
+    transition: all 0.2s ease-in-out;
+    color: #44403C; /* Stone-700 */
+    font-size: 0.95rem;
+}
+
+.input-field:focus {
+    background-color: #FFFFFF;
+    border-color: #10B981; /* Emerald-500 */
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1); /* Soft glow */
+}
+
+/* Result Cards */
+.result-card {
+    padding: 1.25rem;
+    border-radius: 1.25rem; /* Rounded cards */
+    border-width: 1px;
+    border-style: solid;
+    transition: transform 0.2s ease;
+}
+
+.result-card:hover {
+    transform: translateY(-2px); /* Very subtle lift */
+}
+
+/* Simple Fade Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.4s ease-out forwards;
+}
